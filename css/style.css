@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap');
 
 /* Global style */
 
@@ -6,6 +7,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+section {
+    width: 100%;
 }
 
 body {
@@ -103,17 +108,23 @@ li:hover :last-child {
 
 .sub-links-products {
     position: absolute;
+    background-color: white;
     left: 15px;
-    z-index: 1;
 }
 
 .sub-links-support {
     position: absolute;
-    z-index: 1;
+    background-color: white;
     left: 300px;
 }
 
-#service {}
+#service {
+    transform: rotate(0deg);
+}
+
+#service:hover {
+    transform: rotate(0deg);
+}
 
 .product-link:hover .sub-links-products {
     display: flex;
@@ -228,3 +239,256 @@ li:hover :last-child {
 
 
 /* Main style */
+
+
+/* Fist section */
+
+.first-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 7rem;
+}
+
+.hero div {
+    margin: 10px 0;
+    color: #444444;
+}
+
+.learn-more-btn {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 6px 18px;
+    margin-top: 20px;
+    border: 1px solid #444444;
+    transition: var(--main-transition);
+}
+
+.learn-more-btn:hover {
+    color: white;
+    background-color: #444444;
+}
+
+.hero-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hero-motto {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.hero-desc {
+    font-size: 22px;
+    width: 90%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hero-desc span {
+    color: #007DB8;
+}
+
+
+/* Second section */
+
+.computers-cat {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #F9F9F9;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+    top: -5px;
+    border-bottom: 1px solid var(--main-light-grey-color);
+}
+
+.computers-cat div {
+    background-color: #F9F9F9;
+    overflow: hidden;
+}
+
+.computers-cat i {
+    font-size: 1.6rem;
+}
+
+.icon-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.label {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.with-sub {
+    position: relative;
+    top: 40px;
+}
+
+div.with-sub {
+    width: 140px;
+    height: 160px;
+    overflow: hidden;
+    transition: var(--main-transition);
+}
+
+div.no-sub {
+    width: 140px;
+}
+
+.borders {
+    border-right: 1px solid #F9F9F9;
+    border-left: 1px solid #F9F9F9;
+}
+
+.borders:hover {
+    border-right: 1px solid var(--main-light-grey-color);
+    border-left: 1px solid var(--main-light-grey-color);
+}
+
+.sub {
+    position: relative;
+    top: 10px;
+    color: rgb(0, 162, 255);
+}
+
+.with-no-sub .label:hover {
+    cursor: pointer;
+    color: rgb(0, 162, 255);
+}
+
+.sub h4 {
+    margin: 16px 0;
+    cursor: pointer;
+}
+
+div.with-sub:hover {
+    transform: translateY(-80px);
+}
+
+div.with-no-sub:hover {
+    transform: translateY(0px);
+}
+
+
+/* Section 3 */
+
+.third-section {
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.hero-3 {
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    left: 130px;
+}
+
+.hero-3 div {
+    margin: 20px 0;
+}
+
+.hero-title-3 h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.third-section img {
+    width: 100%;
+}
+
+.hero-motto-3 {
+    font-size: 34px;
+}
+
+.hero-desc-3 {
+    font-size: 22px;
+    line-height: 2rem;
+    font-weight: bold;
+    color: black;
+    width: 90%;
+}
+
+.learn-more-btn-3 {
+    font-size: 22px;
+    color: #0076CE;
+    position: relative;
+    font-weight: bold;
+    left: -7px;
+}
+
+.learn-more-btn-3 a {
+    font-size: 22px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #F0F0F0;
+    padding: 1rem 6rem;
+}
+
+.footer-2,
+.footer-3 {
+    display: flex;
+    padding: 0.5rem 1rem;
+}
+
+.footer-2 div,
+.footer-3 div {
+    color: rgb(82, 80, 80);
+    margin: 0 15px;
+    font-size: 13.5px;
+    font-weight: 600;
+}
+
+.footer-2 div h3 {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.curser div h3 {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.footer-3 div {
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-layout div h3 {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.grid-layout h3,
+p {
+    margin: 18px 0;
+}
+
+.footer p {
+    cursor: pointer;
+}
