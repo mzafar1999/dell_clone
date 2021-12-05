@@ -5,47 +5,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
     <title>Dell Clone</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <img src="" alt="">
-            <div>
-                <i></i>
-                <a href="">PK/EN </a>
+            <div class="logo-bars">
+                <i class="fas fa-bars"></i>
+                <img src="./images/dell-png-logo.png" alt="">
+            </div>
+            <div class="lang">
+                <li class="language-select">
+                    <i class="fas fa-globe"></i>
+                    <a href="">PK/EN </a>
+                    <i class="fas fa-caret-down"></i>
+                </li>
             </div>
         </div>
         <nav>
-            <ul>
-                <li>
-                    <a href="">
-                        Products
-                    </a>
-                    <ul class="product-sublinks">
-                        <li><a href="">Laptops</a></li>
-                        <li> <a href="">Deskops & All-in-Ones</a> </li>
-                        <li> <a href="">Workstations</a> </li>
-                        <li> <a href="">Thin Clients</a> </li>
-                        <li> <a href="">Servers</a> </li>
-                        <li> <a href="">Storage</a></li>
-                        <li><a href="">Networking</a></li>
-                    </ul>
-                </li>
+            <ul class="navbar">
+                <div class="product-link">
+                    <li>
+                        <a href="">Products</a>
+                        <i class="fas fa-caret-down rotate"></i>
+                    </li>
+                    <div class="sub-links-products product-sublinks">
+                        <ul>
+                            <li> <a href="">Laptops</a></li>
+                            <li><a href="">Deskops & All-in-Ones</a></li>
+                            <li><a href="">Workstations</a></li>
+                            <li><a href="">Thin Clients</a></li>
+                            <li><a href="">Servers</a></li>
+                            <li><a href="">Storage</a></li>
+                            <li> <a href="">Networking</a> </li>
+                        </ul>
+                    </div>
+                </div>
+
                 <li><a href="">Solutions</a></li>
                 <li><a href="">Services</a></li>
-                <li>
-                    <a href="">Support</a>
-                    <ul class="support-sublinks">
-                        <li><a href="">Support Home</a></li>
-                        <li><a href="">Knowledge Base</a></li>
-                        <li> <a href="">Warranty & Contracts</a> </li>
-                        <li> <a href="">Service Requests & Dispatch Status</a> </li>
-                        <li> <a href="">Contact Us</a> </li>
-                    </ul>
-                </li>
+                <div class="support-link">
+                    <li>
+                        <a href="">Support</a>
+                        <i class="fas fa-caret-down rotate"></i>
+                    </li>
+                    <div class="sub-links-support support-sublinks">
+                        <ul>
+                            <li><a href="">Support Home</a></li>
+                            <li><a href="">Knowledge Base</a></li>
+                            <li> <a href="">Warranty & Contracts</a> </li>
+                            <li id="service">
+                                <a href="">
+                                    <p id="service">Service Requests & Dispatch Status</p>
+                                </a>
+                            </li>
+                            <li> <a href="">Contact Us</a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="lang-small">
+                    <li class="language-select">
+                        <i class="fas fa-globe"></i>
+                        <a href="">PK/EN </a>
+                        <i class="fas fa-caret-down"></i>
+                    </li>
+                </div>
             </ul>
+
         </nav>
     </header>
     <main>
@@ -55,5 +85,6 @@
 
     </footer>
 </body>
+<script src="./javascript/script.js"></script>
 
 </html>
