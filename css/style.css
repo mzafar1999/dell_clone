@@ -159,13 +159,21 @@ li:hover :last-child {
 
 @media screen and (max-width:1024px) {
     nav {
-        width: 310px;
+        width: 340px;
         height: 100vh;
         position: fixed;
         z-index: 1000;
         background-color: white;
-        display: none;
+        position: fixed;
+        left: -100vw;
+        transition: 0.3s;
+       
     }
+
+    .active {
+        left: 0;
+    }
+    
     .navbar {
         flex-direction: column;
         border-bottom: none;
@@ -229,7 +237,16 @@ li:hover :last-child {
     .product-link i,
     .support-link i {
         position: relative;
-        left: 140px;
+        left: 10px;
+    }
+
+    .logo-bars button{
+        background-color: transparent;
+        border: none;
+    }
+    .logo-bars :focus .burger {
+       color: black;
+       cursor: pointer;
     }
     li {
         padding: 12px 16px 14px;
