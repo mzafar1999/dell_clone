@@ -239,7 +239,9 @@ li:hover :last-child {
         position: relative;
         left: 10px;
     }
-
+    .lock-scroll {
+        overflow: hidden;
+    }
     .logo-bars button{
         background-color: transparent;
         border: none;

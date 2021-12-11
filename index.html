@@ -22,7 +22,7 @@
     <header class="header">
         <div class="logo">
             <div class="logo-bars">
-                <button class="sidebar-btn"><i class="fas fa-bars burger"></i></button>
+                <button class="sidebar-btn" onclick="lockScroll()" ><i class="fas fa-bars burger"></i></button>
                 <img src="./images/dell-png-logo.png" alt="">
             </div>
             <div class="lang">
@@ -281,5 +281,9 @@
     </footer>
 </body>
 <script src="./javascript/script.js"></script>
-
+<script>
+    function lockScroll() {
+          document.body.classList.toggle('lock-scroll');
+    }
+</script>
 </html>
