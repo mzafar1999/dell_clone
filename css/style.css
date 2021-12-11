@@ -158,6 +158,14 @@ li:hover :last-child {
 }
 
 @media screen and (max-width:1024px) {
+    nav {
+        width: 310px;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        background-color: white;
+        display: none;
+    }
     .navbar {
         flex-direction: column;
         border-bottom: none;
@@ -257,14 +265,14 @@ li:hover :last-child {
 }
 
 .hero div {
-    margin: 10px 0;
+    margin: 10px auto;
     color: #444444;
 }
 
 .learn-more-btn {
-    font-size: 1.3rem;
+    font-size: 17px;
     font-weight: bold;
-    padding: 6px 18px;
+    padding: 4px 18px;
     margin-top: 20px;
     border: 1px solid #444444;
     transition: var(--main-transition);
@@ -281,12 +289,14 @@ li:hover :last-child {
 }
 
 .hero-motto {
-    font-size: 34px;
+    font-size: 29px;
     font-weight: bold;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-desc {
-    font-size: 22px;
+    font-size: 17px;
     width: 90%;
     text-align: center;
     font-weight: bold;
@@ -294,6 +304,15 @@ li:hover :last-child {
 
 .hero-desc span {
     color: #007DB8;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width:1024px) {
+    .hero {
+        margin-left: 1rem;
+    }
 }
 
 
@@ -417,6 +436,10 @@ div.with-no-sub:hover {
     font-size: 34px;
 }
 
+.header-image {
+    width: 100%;
+}
+
 .hero-desc-3 {
     font-size: 22px;
     line-height: 2rem;
@@ -427,7 +450,7 @@ div.with-no-sub:hover {
 
 .learn-more-btn-3 {
     font-size: 22px;
-    color: #0076CE;
+    color: #0779d6;
     position: relative;
     font-weight: bold;
     left: -7px;
@@ -491,4 +514,139 @@ p {
 
 .footer p {
     cursor: pointer;
+}
+
+
+/* 4th Section */
+
+@media screen and (min-width:769px) {
+    .support-sec {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .support-sec-sub {
+        display: flex;
+    }
+    .forth-section {
+        margin-top: 40px;
+        width: 100%;
+        background-color: #F9F9F9;
+        padding: 15px 0;
+    }
+    .forth-section h2 {
+        margin-bottom: 30px;
+    }
+    .forth-section a {
+        font-size: 16px;
+        font-weight: normal;
+        padding-left: 10px;
+        border-left: 2px solid rgb(119, 119, 119);
+    }
+    .forth-section .first-child {
+        border-left: none;
+    }
+}
+
+@media screen and (min-width:1140px) {
+    .forth-section {
+        margin-top: 80px;
+        width: 100%;
+        background-color: #F9F9F9;
+        padding: 15px 0;
+        padding-bottom: 40px;
+    }
+    .forth-section h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        color: rgb(63, 63, 63);
+    }
+    .forth-section a {
+        font-size: 21px;
+        font-weight: bold;
+        border-left: 1.5px solid rgb(119, 119, 119);
+        padding: 10px 25px;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .forth-section .first-child {
+        border-left: none;
+    }
+}
+
+
+/* Responsive Code */
+
+@media screen and (max-width:768px) {
+    .first-section {
+        flex-direction: column-reverse;
+    }
+    .computers-cat {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 210px;
+        margin: 10px;
+        margin-top: 20px;
+        background-color: white;
+        box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.24);
+        -webkit-box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.24);
+        -moz-box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.164);
+    }
+    .computers-cat div {
+        background-color: white;
+    }
+    .with-sub {
+        height: 180px;
+    }
+    .third-section {
+        flex-direction: column;
+        box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.2);
+        width: auto;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .third-section img {
+        width: 100%;
+    }
+    .hero-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 0;
+    }
+    .hero-motto-3 {
+        font-size: 20px;
+    }
+    .hero-desc-3 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .learn-more-btn-3 {
+        font-size: 16px;
+    }
+    .footer {
+        padding: 0;
+    }
+    .grid-layout {
+        display: block;
+    }
+    .footer-2 {
+        display: block;
+    }
+    .forth-section {
+        margin-top: 15px;
+        padding: 15px 0;
+    }
+    .forth-section div {
+        margin: 15px 0;
+        margin-bottom: 28px;
+    }
 }
