@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-    </script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/nav-style.css">
-    <link rel="stylesheet" href="./css/header-style.css">
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.sidebar-btn').click(function() {
+                $('nav').toggleClass('active');
+            })
+        })
+    </script>
     <title>Dell Clone</title>
 </head>
 
@@ -20,7 +22,7 @@
     <header class="header">
         <div class="logo">
             <div class="logo-bars">
-                <button class="sidebar-btn" onclick="lockScroll()"><i class="fas fa-bars burger"></i></button>
+                <i class="fas fa-bars"></i>
                 <img src="./images/dell-png-logo.png" alt="">
             </div>
             <div class="lang">
@@ -87,10 +89,10 @@
     <main>
         <section class="first-section">
             <div class="hero flex-item">
-                <div class="hero-title-xps">
+                <div class="hero-title">
                     XPS 15 LAPTOP
                 </div>
-                <div class="hero-title">
+                <div class="hero-motto">
                     YOUR VISION, MORE VIVID
                 </div>
                 <div class="hero-desc">
@@ -165,7 +167,7 @@
                 <div class="hero-title-3">
                     <h2>FOR HOME</h2>
                 </div>
-                <div class="hero-title-3">
+                <div class="hero-motto-3">
                     Connect To Your World
                 </div>
                 <div class="hero-desc-3">
@@ -198,147 +200,39 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="third-section fifth-section first-section">
 
-            <div class=" hero-3 hero-5 flex-item">
-                <div class="hero-title-3 hero-title-5">
-                    <h2>SERVERS, STORAGE, NETWORKING</h2>
-                </div>
-                <div class="hero-title-5 hero-title-3">
-                    Flexible, Scalable IT Solutions
-                </div>
-                <div class="hero-desc-3 hero-desc-5">
-                    Power transformation with server, storage and network solutions that adapt and scale to your business needs.
-                </div>
-                <div>
-                    <a class="learn-more-btn-3" href="">Learn More</a>
-                </div>
-            </div>
-            <div class="image flex-item image-server">
-                <img src="./images/server.jpg" alt="">
-            </div>
         </section>
+
     </main>
     <footer>
-        <div class="footer-lg">
-            <div class="footer-1">
-                <div class="grid-layout footer-2">
-                    <div>
-                        <i class="fas fa-world"></i>
-                        <h3>PK/EN</h3>
-                        <p>Site Map</p>
-                    </div>
-                    <div>
-                        <h3>Support</h3>
-
-                        <p>Support Home</p>
-                        <p>Contact Us</p>
-                    </div>
-                    <div>
-                        <h3>Contact with Us</h3>
-                        <p>Community</p>
-                    </div>
-                </div>
-                <div class="grid-layout footer-2">
-                    <div>
-                        <h3>Our Offerings</h3>
-                        <p>APEX</p>
-                        <p>Products</p>
-                        <p>Solutions</p>
-                        <p>Services</p>
-                    </div>
-                    <div>
-                        <h3>Our Company</h3>
-                        <p>About Dell Technologies</p>
-                        <p>Careers</p>
-                        <p>Dell Technologies Capital</p>
-                        <p>Investor Relations</p>
-                        <p>Newsroom</p>
-                        <p>Perspectives</p>
-                        <p>Product Recycling</p>
-                        <p>Social Impact</p>
-                    </div>
-                    <div>
-                        <h3>Our Partners</h3>
-                        <p>Find a Partner</p>
-                        <p>Original Equipment Manufacturers</p>
-                        <p>Partner Program</p>
-                        <h3 style="color: tomato;">Created by M.Zafar <i class="fas fa-grin-beam"></i> </h3>
-
-                    </div>
-                    <div>
-                        <h3>Resources</h3>
-                        <p>Events</p>
-                        <p>Glossary</p>
-                        <p>Resource Library</p>
-                        <p>Trial Software Downloads</p>
-                        <h3><a href="https://github.com/mzafar1999/dell_clone" target="_blank">Get Source Code of This Page</a> <i class="fab fa-github"></i> </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-2 curser">
-                <div>
-                    <h3>Dell.com</h3>
-                </div>
-                <div>
-                    <h3>Dell Technologies</h3>
-                </div>
-                <div>
-                    <h3>Premier</h3>
-                </div>
-            </div>
-            <div class="footer-3">
-                <div>&copy;2021 Dell</div>
-                <div>Terms of Sale</div>
-                <div>Privacy Statement</div>
-                <div>Legal & Regulatory</div>
-            </div>
-        </div>
-
-        <!-- Mobile view -->
         <div class="footer">
             <div class="footer-1">
                 <div class="grid-layout footer-2">
-                    <div class="toggle">
+                    <div>
                         <i class="fas fa-world"></i>
                         <h3>PK/EN</h3>
-                    </div>
-                    <div class="content">
                         <p>Site Map</p>
                     </div>
-
-                    <div class="toggle">
+                    <div>
                         <h3>Support</h3>
-                    </div>
-                    <div class="content">
                         <p>Support Home</p>
                         <p>Contact Us</p>
                     </div>
-
-                    <div class="toggle">
+                    <div>
                         <h3>Contact with Us</h3>
-                    </div>
-                    <div class="content">
                         <p>Community</p>
                     </div>
                 </div>
                 <div class="grid-layout footer-2">
-                    <div class="toggle">
+                    <div>
                         <h3>Our Offerings</h3>
-
-                    </div>
-                    <div class="content">
                         <p>APEX</p>
                         <p>Products</p>
                         <p>Solutions</p>
                         <p>Services</p>
                     </div>
-                    <div class="toggle">
+                    <div>
                         <h3>Our Company</h3>
-                    </div>
-                    <div class="content">
-
                         <p>About Dell Technologies</p>
                         <p>Careers</p>
                         <p>Dell Technologies Capital</p>
@@ -348,21 +242,16 @@
                         <p>Product Recycling</p>
                         <p>Social Impact</p>
                     </div>
-                    <div class="toggle">
+                    <div>
                         <h3>Our Partners</h3>
-                    </div>
-                    <div class="content">
                         <p>Find a Partner</p>
                         <p>Original Equipment Manufacturers</p>
                         <p>Partner Program</p>
                         <h3 style="color: tomato;">Created by M.Zafar <i class="fas fa-grin-beam"></i> </h3>
+
                     </div>
-                    <div class="toggle">
+                    <div>
                         <h3>Resources</h3>
-
-                    </div>
-                    <div class="content">
-
                         <p>Events</p>
                         <p>Glossary</p>
                         <p>Resource Library</p>
@@ -392,10 +281,5 @@
     </footer>
 </body>
 <script src="./javascript/script.js"></script>
-<script>
-    function lockScroll() {
-        document.body.classList.toggle('lock-scroll');
-    }
-</script>
 
 </html>

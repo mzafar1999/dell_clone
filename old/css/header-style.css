@@ -1,0 +1,22 @@
+.header-logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 35px;
+    padding-bottom: 5px;
+}
+
+.header-logo img {
+    width: 5.2%;
+}
+
+.header-language-select:hover {
+    border-bottom: 2px solid white;
+}
+
+.header-logo-bars i {
+    display: none;
+}
+
+.header-image {
+    width: 100%;
+}
