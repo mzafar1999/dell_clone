@@ -66,6 +66,110 @@ li:hover :last-child {
     display: none;
 }
 
+@media screen and (max-width:1024px) {
+    nav {
+        width: 340px;
+        height: 100vh;
+        position: fixed;
+        z-index: 1000;
+        background-color: white;
+        position: fixed;
+        left: -100vw;
+        transition: 0.3s;
+    }
+    .active {
+        left: 0;
+    }
+    .navbar {
+        flex-direction: column;
+        border-bottom: none;
+        width: 300px;
+    }
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 0;
+        padding-bottom: 0;
+        height: 60px;
+    }
+    .logo-bars {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 80%;
+    }
+    .logo-bars i {
+        display: block;
+        font-size: 1.6rem;
+        color: gray;
+    }
+    .logo img {
+        position: relative;
+        left: 30px;
+        width: 40px;
+    }
+    .fa-globe i {
+        display: none;
+    }
+    .logo {
+        border-bottom: 2px solid var(--main-light-grey-color);
+    }
+    .fa-caret-down {
+        transform: rotate(-90deg);
+    }
+    .lang {
+        display: none;
+    }
+    .lang-small {
+        display: block;
+        width: 150px;
+        padding-right: 0;
+    }
+    .sub-links-products,
+    .sub-links-support {
+        visibility: hidden;
+        left: 0px;
+        height: 0;
+    }
+    .line {
+        display: block;
+        width: 260px;
+        height: 1px;
+        margin: 20px 0;
+        background-color: var(--main-light-grey-color);
+    }
+    .product-link i,
+    .support-link i {
+        position: relative;
+        left: 10px;
+    }
+    .lock-scroll {
+        overflow: hidden;
+    }
+    .logo-bars button {
+        background-color: transparent;
+        border: none;
+    }
+    .logo-bars :focus .burger {
+        color: black;
+        cursor: pointer;
+    }
+    li {
+        padding: 12px 16px 14px;
+        list-style: none;
+        border-bottom: 2px solid white;
+    }
+    li:hover {
+        background-color: white;
+        border-bottom: 2px solid white;
+    }
+    li:hover :last-child {
+        transform: rotate(-90deg);
+    }
+}
+
 
 /* Main style */
 
